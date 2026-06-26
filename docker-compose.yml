@@ -4,7 +4,8 @@ services:
     image: twentycrm/twenty-app-dev:latest
     ports:
       - "2020:2020"
+    environment:
+      SERVER_URL: ${SHIPYARD_URL}
     labels:
       shipyard.route: '/'
       shipyard.primary-route: 'true'
-      shipyard.env.SERVER_URL: '${SHIPYARD_URL}'
