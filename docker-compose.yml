@@ -9,3 +9,4 @@ services:
     labels:
       shipyard.route: '/'
       shipyard.primary-route: 'true'
+      shipyard.readiness.http.path: /healthz
